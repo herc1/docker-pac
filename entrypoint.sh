@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cp -f /opt/apache2/*.conf /etc/apache2/sites-available/
-cp -f /opt/apache2/conf-available/*.conf /etc/apache2/conf-available/
+yes | cp -f /opt/apache2/*.conf /etc/apache2/sites-available/
+yes | cp -f /opt/apache2/conf-available/*.conf /etc/apache2/conf-available/
 
 while true; do
  if [ $(pgrep apache2 | wc -l) -eq 0 ]
