@@ -6,6 +6,8 @@ RUN apt-get -y install cron
 
 RUN mkdir -p /opt/conf/apache2
 
+RUN mkdir -p /opt/php
+
 COPY entrypoint.sh /
 
 EXPOSE 80

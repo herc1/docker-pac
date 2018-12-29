@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yes | cp -f /opt/conf/apache2/*.conf /etc/apache2/sites-available/
+yes | cp -f /opt/conf/apache2/* /etc/apache2/sites-available/
 yes | cp -f /opt/conf/apache2/conf-available/*.conf /etc/apache2/conf-available/
 cat /opt/conf/crontab >> /etc/crontab
 
