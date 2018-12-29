@@ -12,4 +12,4 @@ COPY entrypoint.sh /
 
 EXPOSE 80
 
-CMD ['/entrypoint.sh']
+CMD ["/entrypoint.sh"]
