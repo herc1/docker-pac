@@ -10,6 +10,8 @@ RUN mkdir -p /opt/php
 
 COPY entrypoint.sh /
 
+RUN docker-php-ext-install mysqli
+
 EXPOSE 80
 
 ENTRYPOINT ["/entrypoint.sh"]
