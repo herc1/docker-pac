@@ -8,9 +8,9 @@ RUN mkdir -p /opt/conf/apache2
 
 RUN mkdir -p /opt/php
 
-COPY entrypoint.sh /
-
 RUN docker-php-ext-install mysqli
+
+COPY entrypoint.sh /
 
 EXPOSE 80
 
