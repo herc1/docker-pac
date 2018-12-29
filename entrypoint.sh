@@ -1,7 +1,8 @@
 #!/bin/bash
 
-yes | cp -f /opt/apache2/*.conf /etc/apache2/sites-available/
-yes | cp -f /opt/apache2/conf-available/*.conf /etc/apache2/conf-available/
+yes | cp -f /opt/conf/apache2/*.conf /etc/apache2/sites-available/
+yes | cp -f /opt/conf/apache2/conf-available/*.conf /etc/apache2/conf-available/
+cat /opt/conf/crontab >> /etc/crontab
 
 while true; do
  if [ $(pgrep apache2 | wc -l) -eq 0 ]
